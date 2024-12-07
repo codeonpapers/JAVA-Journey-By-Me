@@ -2,7 +2,7 @@ public class octa
 {
     public static void main(String args[])
     {
-        int a=12713;
-        System.out.println(a);
+        int a=06;
+        System.out.println(a);//Printed 
     }
 }
