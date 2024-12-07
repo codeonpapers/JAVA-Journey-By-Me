@@ -4,5 +4,7 @@ public class string
     {
         String name="Rakesh";
         System.out.println(name);
+        String lastName=null;
+        System.out.println(lastName);//Print last name as NULL
     }
 }
