@@ -11,10 +11,10 @@ public class ConstructorOverloader {
         display();//Display function call
     }
     void display(){
-        System.out.println(brand);
-        System.out.println(model);
-        System.out.println(mileage);
-        System.out.println(price);
+        System.out.println("Brand: "+brand);
+        System.out.println("Model: "+model);
+        System.out.println("Mileage: "+mileage);
+        System.out.println("Price: "+price);
         System.out.println("--------------------");
     }
     public static void main(String[] args) {
@@ -24,11 +24,11 @@ public class ConstructorOverloader {
 
         int[] mileage={10, 20, 30, 40, 50, 60, 70, 80};
 
-        int brandIndex=0;
+        //int brandIndex=0;
 
-        for(int i=0;i<8;i++){
-            ConstructorOverloader obj=new ConstructorOverloader(brand[brandIndex], "A35", mileage[brandIndex], carPrice[brandIndex]);
-            brandIndex++;
+        for(int i=0;i<brand.length;i++){
+            ConstructorOverloader obj=new ConstructorOverloader(brand[i], "A35", mileage[i], carPrice[i]);
+            //brandIndex++;
         }
     } 
 }
